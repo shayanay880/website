@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 20px;
+}
+
+#clear-history {
+    background-color: red;
+    color: black;
+    font-size: 12px;
+    padding: 3px 4px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+#clear-history:hover {
+    background-color: darkred;
+}
+
+.clipboard-section,
+.file-section {
+    margin-top: 20px;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+#file-size {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#progress-container {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+#progress-bar {
+    height: 25px;
+    width: 0;
+    background-color: blue;
+    border-radius: 5px;
+    transition: width 0.1s;
+}
+
+#progress-text {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+#datetime-container {
+    margin-top: 20px;
+    font-size: 14px;
+}
