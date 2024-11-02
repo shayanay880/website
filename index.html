@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clipboard Sync</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Clipboard Input</h2>
+    <textarea id="clipboard" placeholder="Type here..." rows="3"></textarea>
+    <button id="save-button">Save Clipboard</button>
+
+    <h2>Clipboard History</h2>
+    <ul id="history-list"></ul>
+    <button id="clear-history">Clear Clipboard History</button>
+
+    <h2>File Upload/Download</h2>
+    <form id="upload-form" enctype="multipart/form-data">
+        <input type="file" id="file-input" name="file" required>
+        <span id="file-size">Size: 0 KB</span>
+        <button type="submit">Upload File</button>
+    </form>
+
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+        <div id="progress-text">0%</div>
+    </div>
+
+    <h2>Uploaded Files</h2>
+    <ul id="file-list"></ul>
+
+    <div id="datetime-container">
+        <div id="current-date"></div>
+        <div id="current-time"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
